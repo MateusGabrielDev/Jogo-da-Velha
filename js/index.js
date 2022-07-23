@@ -38,7 +38,7 @@ function checarVencedor(turno) {
 
   if (vencedor) {
     encerrarJogo(turno);
-  } else if (checarEmpate) {
+  } else if (checarEmpate()) {
     encerrarJogo();
   } else {
     checarTurno = !checarTurno;
@@ -50,7 +50,7 @@ function checarEmpate() {
   let o = 0;
 
   for (index in celulas) {
-    if(!isNaN[index]) {
+    if(!isNaN(index)) {
       if(celulas[index].classList.contains(jogadorX)) {
         x++;
       }
