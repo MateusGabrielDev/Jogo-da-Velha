@@ -6,7 +6,8 @@ body {
   font-family: 'Open Sans';
 }
 
-h2 {
+h2,
+h3 {
   margin-top: -5px;
   text-align: center;
 }
