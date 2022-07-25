@@ -23,6 +23,7 @@ document.addEventListener("click", (event) => {
 
 function jogar(id) {
   const celula = document.getElementById(id);
+  if(!!celula.innerHTML) return;
   turno = checarTurno ? jogadorX : jogadorO;
   celula.textContent = turno;
   celula.classList.add(turno);
